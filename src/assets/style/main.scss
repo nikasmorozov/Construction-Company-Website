@@ -1,7 +1,68 @@
-.foto{
-  background: url('../../../public/city.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100vw;
-  height: 100vh;
+@import 'variables';
+
+
+#myVideo {
+  margin-top: 100px;
+  // position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -3;
+}
+
+h2 {
+  color: $text-gray;
+  position: relative;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  z-index: -2;
+}
+
+h2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -65px;
+  height: 100%;
+  width: 130px;
+  border-bottom: 10px solid $main-color;
+  transform: translateY(15px);
+}
+
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 200;
+  color: $text-color;
+  line-height: 1.4;
+  text-align: justify;
+
+  .card {
+    max-width: 300px;
+    background-color: $lgray;
+    margin: 0 10px 0 10px;
+
+    div {
+      padding: 30px;
+    }
+  }
+
+  img {
+    width: 300px;
+    height: 225px;
+  }
+
+  h4 {
+    color: $blue-text;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+  }
 }
