@@ -1,12 +1,42 @@
 @import 'variables';
 
+.videoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #myVideo {
   margin-top: 100px;
   // position: fixed;
   min-width: 100%;
   min-height: 100%;
-  z-index: -3;
+  z-index: -99;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  max-width: 700px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  transform: translateY(-250px);
+}
+
+h1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -20px;
+  height: 40px;
+  width: 40px;
+  border-bottom: 7px solid #fff;
+  border-right: 7px solid #fff;
+  transform: rotate(45deg) translate(175px, 175px);
 }
 
 h2 {
