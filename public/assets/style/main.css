@@ -1,1 +1,1 @@
-.foto{display:block;background-image:url("/green.jpg");background-position:center;min-width:1000px;min-height:1000px;background-size:100%}
+.foto{background:url("../../../public/city.jpg");background-repeat:no-repeat;background-size:100%;width:100vw;height:100vh}

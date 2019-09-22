@@ -2,6 +2,8 @@ nav {
   display: flex;
   height: $nav-height;
   clip-path: fill-box;
+  position: fixed;
+  width: 100vw;
 }
 .nav-logo {
   background-color: $main-color;
