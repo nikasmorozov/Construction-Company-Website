@@ -1,11 +1,8 @@
-    article {
-        margin-left: 240px;
-    }
-
-  .content{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 20px 10px;
-    box-sizing: border-box;
-  }
+.foto{
+  display: block;
+  background-image: url("/green.jpg");
+  background-position: center;
+  min-width: 1000px;
+  min-height: 1000px;
+  background-size: 100%;
+}
