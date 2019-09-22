@@ -1,18 +1,7 @@
-$main-color: #3f51b5;
-$nav-height: 70px;
-$sidenav-width: 240px;
+$main-color: rgba(237, 205, 31, 1);
+$secondary-color: rgb(30, 45, 59);
+$font-blue: #3D5975;
+$nav-height: 100px;
 $nav-text-color: #fff;
 $text-color: #343c49;
-$text-gray: #797979;
-$box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-
-$color-opacity: 0.75;
-$color-opacity-low: 0.3;
-$success: rgba(102, 187, 106, $color-opacity);
-$success-low: rgba(102, 187, 106, $color-opacity-low);
-$primary: rgba(63, 81, 181, $color-opacity);
-$primary-low: rgba(63, 81, 181, $color-opacity-low);
-$danger: rgba(238, 110, 115, $color-opacity);
-$danger-low: rgba(238, 110, 115, $color-opacity-low);
-$info: rgba(156, 39, 176, $color-opacity);
-$info-low: rgba(156, 39, 176, $color-opacity-low);
+$text-gray: #C6C6C6;

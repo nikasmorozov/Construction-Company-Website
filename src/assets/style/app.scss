@@ -1,18 +1,17 @@
 @import 'variables';
 @import 'fonts';
 @import 'navbar';
-@import 'sidenav';
-@import 'dashboard';
+@import 'main';
 
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: #ebebeb;
 }
 
 svg {
-  height: 24px;
-  width: 24px;
   fill: white;
 }
 
+a {
+  text-decoration: none;
+}
