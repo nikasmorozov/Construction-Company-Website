@@ -40,6 +40,7 @@ module.exports = function (grunt) {
         src: [
           // 'content/svg/production/ic_add_24px.svg',
           '../../../../public/assets/img/ic_construct_24px.svg',
+          '../../../../public/assets/img/ic_behance_24px.svg',
         ],
         dest: 'src/sprites',
         options: {
