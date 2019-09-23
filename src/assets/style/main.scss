@@ -1,5 +1,9 @@
 @import 'variables';
 
+html {
+	scroll-behavior: smooth;
+}
+
 .container {
   // max-width: 2000px;
   display: flex;
@@ -218,13 +222,23 @@ h4 {
   div {
     width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   svg {
-    width: 100px;
-    height: 100px;
-    margin: 0 30px 0 30px;
+    position: relative;
+    height: 70px;
+    margin: 0 20px 0 20px;
+  }
+
+  svg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 130px;
+    border-bottom: 10px solid $main-color;
   }
 }
 
@@ -235,14 +249,14 @@ h4 {
   flex-direction: column;
 
   img {
-    width: 50%;
+    width: 60%;
   }
 
   .contactInfo {
     // margin-top: 50px;
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 60%;
     justify-content: space-between;
     
 

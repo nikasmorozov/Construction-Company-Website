@@ -41,6 +41,11 @@ module.exports = function (grunt) {
           // 'content/svg/production/ic_add_24px.svg',
           '../../../../public/assets/img/ic_construct_24px.svg',
           '../../../../public/assets/img/ic_behance_24px.svg',
+          '../../../../public/assets/img/ic_visa_24px.svg',
+          '../../../../public/assets/img/ic_mastercard_24px.svg',
+          '../../../../public/assets/img/ic_vimeo_24px.svg',
+          '../../../../public/assets/img/ic_paypal_24px.svg',
+          '../../../../public/assets/img/ic_soundcloud_24px.svg',
         ],
         dest: 'src/sprites',
         options: {
