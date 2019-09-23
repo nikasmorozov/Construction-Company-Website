@@ -248,22 +248,21 @@ h4 {
 
     div {
       width: 100%;
-      padding-right: 40px;
-    }
+      padding-right: 40px;    }
 
     h4 {
       position: relative;
       margin: 50px 0 20px 0;
       color: $text-contact;
       font-size: 25px;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.2px;
     }
 
     div:last-of-type h4 {
-      margin-top: 70px;
+      // margin-top: 70px;
     }
 
-    div:last-of-type h4:last-of-type:before {
+    div:last-of-type h4:last-of-type:after {
       content: "";
       position: absolute;
       top: -50px;
@@ -277,7 +276,7 @@ h4 {
       margin: 0 0 3px 0;
       line-height: 1.3;
       color: $text-contact;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.2px;
     }
   }
 }
