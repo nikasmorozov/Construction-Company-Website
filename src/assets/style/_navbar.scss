@@ -5,6 +5,7 @@ nav {
   position: fixed;
   width: 100vw;
   // transform: translateY(-100px);
+  z-index: 99;
 }
 .nav-logo {
   background-color: $main-color;
