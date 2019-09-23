@@ -235,18 +235,49 @@ h4 {
   flex-direction: column;
 
   img {
-    width: 70%;
+    width: 50%;
   }
 
   .contactInfo {
+    // margin-top: 50px;
     display: flex;
     flex-direction: row;
-    width: 70%;
-
+    width: 50%;
+    justify-content: space-between;
+    
 
     div {
-      width: 50%;
-      padding-right: 50px;
+      width: 100%;
+      padding-right: 40px;
+    }
+
+    h4 {
+      position: relative;
+      margin: 50px 0 20px 0;
+      color: $text-contact;
+      font-size: 25px;
+      letter-spacing: 1.5px;
+    }
+
+    div:last-of-type h4 {
+      margin-top: 70px;
+    }
+
+    div:last-of-type h4:last-of-type:before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: 0;
+      height: 100%;
+      width: 70px;
+      border-bottom: 10px solid $main-color;
+    }
+
+    p {
+      margin: 0 0 3px 0;
+      line-height: 1.3;
+      color: $text-contact;
+      letter-spacing: 1.5px;
     }
   }
 }
