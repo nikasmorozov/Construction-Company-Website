@@ -5,11 +5,19 @@ html {
 }
 
 .container {
-  // max-width: 2000px;
+  width: 100vw;
+}
+
+.wrapper {
+  width: 60%;
+}
+
+section {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .videoSection {
@@ -75,24 +83,22 @@ h2:after {
   transform: translateY(15px);
 }
 
-p{
+p {
   font-weight: 200;
   color: $text-color;
   line-height: 1.4;
   text-align: justify;
 }
 
-.services {
-  width: 100%;
+#services .wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
  
   .card {
     max-width: 300px;
     background-color: $lgray;
-    margin: 0 10px 0 10px;
 
     div {
       padding: 30px;
@@ -112,24 +118,28 @@ h4 {
   margin: 0;
 }
 
-.sectionAbout {
+#about {
+  justify-content: flex-start;
   width: 50%;
   background: $lgray;
-  margin: 80px 0 0px 0;
-  padding: 40px 0 80px 0;
+  margin-top: 100px;
+
+  .wrapper {
+    width: 100%;
+  }
 
   h2 {
-    margin-left: 375px;
     text-align: left;
     margin-top: 0;
   }
+
   h2:after {
     margin-left: 0px;
     left: 0;
   }
+
   p {
-    width: 50%;
-    margin-left: 375px;
+    width: 40%;
     line-height: 1.7;
     font-size: 17px;
   }
@@ -139,18 +149,14 @@ h4 {
   background: $main-color;
   width: 100%;
   height: 230px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 
-  div {
+  .wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    margin: 0 80px 0 80px;
-    width: max-content;
+    justify-content: space-between;
+    margin: 0 auto;
+
   }
 
   h5 {
@@ -182,27 +188,19 @@ h4 {
   }
 }
 
-.sectionProjects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  div {
+#projects {
+  .wrapper {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
-    width: 70%;
   }
 
   img {
-    width: 450px;
-    height: 450px;
     background-position: center;
     background-size: cover;
-    margin: 15px;
+    width: 40%;
+    box-sizing: border-box;
   }
 }
 
@@ -349,4 +347,16 @@ h4 {
       letter-spacing: 1.2px;
     }
   }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.endNote {
+  text-align: center;
+  margin-top: 100px;
 }
