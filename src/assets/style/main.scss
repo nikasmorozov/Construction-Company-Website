@@ -15,7 +15,6 @@ html {
 .container {
   width: 100vw;
   z-index: 9;
-  // margin-top: 100px;
 }
 
 .wrapper {
@@ -424,7 +423,7 @@ footer {
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: 100%;
+  background-position: 50vw;
   background-repeat: no-repeat;
   background-size: contain;
 }
