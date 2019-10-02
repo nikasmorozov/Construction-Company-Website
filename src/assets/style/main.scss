@@ -4,14 +4,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-#myVideo {
-  margin-top: 100px;
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -9;
-}
-
 .container {
   width: 100vw;
   z-index: 9;
@@ -53,7 +45,7 @@ footer {
   width: 100%;
   position: fixed;
   left: 0;
-  top:0;
+  top: 0;
   z-index: -999;
   }
   .ParallaxVideo h1 {
@@ -205,7 +197,11 @@ h4 {
   }
 }
 
-#projects {
+
+
+
+
+.projects {
   .wrapper {
     flex-wrap: wrap;
   }
@@ -214,6 +210,11 @@ h4 {
     width: 50%;
     padding: 10px;
     box-sizing: border-box;
+
+    p {
+      padding-right: 20px;
+      margin: 0;
+    }
   }
 
   .projImage {
@@ -224,7 +225,7 @@ h4 {
     transition: .5s ease-in-out;
     background-repeat: no-repeat;
   }
-
+  
   #proj1 {
     background-image: url(../../../public/assets/img/proj1.png);
   }
@@ -289,6 +290,12 @@ h4 {
     position: relative;
     height: 70px;
     max-width: 100px;
+    opacity: 0.66;
+    transition: .3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -309,55 +316,6 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      margin-top: 30px;
-
-      input, textarea {
-        width: 100%;
-        background: #F7F7F7;
-        border: none;
-        font-size: 15px;
-        height: 30px;
-        padding: 3px 3px 3px 12px;
-        margin: 5px 0 5px;
-        color: $lgray;
-        font-weight: 100;
-        line-height: 0;
-        box-sizing: border-box;
-
-        &:focus {
-          outline: none;
-        }
-
-        &:hover {
-          background-color: rgba(198, 198, 198, 1);
-        }
-      }
-
-      textarea {
-        height: 120px;
-        padding: 20px 3px 3px 12px;
-        resize: none;
-        box-sizing: border-box;
-      }
-
-      input:last-of-type {
-        background: rgba(59, 58, 58, 1);
-        width: 150px;
-        height: 40px;
-        color: $main-color;
-        font-weight: 600;
-
-        &:hover {
-          background: $main-color;
-          color: rgba(59, 58, 58, 1);
-        }
-      }
-    }
 
     div {
       width: 100%;
@@ -402,6 +360,57 @@ h4 {
   }
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 30px;
+
+  input, textarea {
+    width: 100%;
+    background: #F7F7F7;
+    border: none;
+    font-size: 15px;
+    height: 30px;
+    padding: 3px 3px 3px 12px;
+    margin: 5px 0 5px 0;
+    color: $lgray;
+    font-weight: 100;
+    line-height: 0;
+    box-sizing: border-box;
+    text-align: center;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: rgba(198, 198, 198, 1);
+    }
+  }
+
+  textarea {
+    height: 120px;
+    padding: 20px 3px 3px 12px;
+    resize: none;
+    box-sizing: border-box;
+  }
+
+  input:last-of-type {
+    background: rgba(59, 58, 58, 1);
+    width: auto;
+    height: 40px;
+    color: $main-color;
+    font-weight: 600;
+    padding: 12px 50px 12px 50px;
+
+    &:hover {
+      background: $main-color;
+      color: rgba(59, 58, 58, 1);
+    }
+  }
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -426,4 +435,49 @@ footer {
   background-position: 50vw;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.projectPageHeading {
+  background: $lgray;
+  flex-direction: row;
+  padding: 100px 0 30px 0;
+
+  h2:after {
+    margin-left: 0px;
+    left: 0;
+  }
+}
+
+#projectPage {
+  padding: 50px 0 0 0;
+
+  a.butt {
+    text-transform: uppercase;
+    width: 200px;
+    padding: 12px 12px 12px 12px;
+    border: none;
+    font-size: 15px;
+    height: 45px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgba(59, 58, 58, 1);
+    color: $main-color;
+    font-weight: 600;
+
+    &:hover {
+      background: $main-color;
+      color: rgba(59, 58, 58, 1);
+    }
+  }
+
+  .projContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .projImage {
+    background-size: auto;
+  }
 }
