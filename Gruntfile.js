@@ -46,6 +46,7 @@ module.exports = function (grunt) {
           '../../../../public/assets/img/ic_vimeo_24px.svg',
           '../../../../public/assets/img/ic_paypal_24px.svg',
           '../../../../public/assets/img/ic_soundcloud_24px.svg',
+          '../../../../public/assets/img/ic_menuButton_24px.svg',
         ],
         dest: 'src/sprites',
         options: {
