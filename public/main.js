@@ -15,6 +15,7 @@ $(document).ready(function(){
         $('html, body').animate({
           scrollTop: $(hash).offset().top - 100
         }, 1000);
+        $(this).parent().parent().parent().removeClass('navbar-active');
       } // End if
     });
 });
@@ -23,7 +24,6 @@ $(function() {
     $('[data-toggle]').on('click', function(e){
         e.preventDefault();
         let element = $(this).data('toggle');
-
         $('[data-' + element + ']')
         .toggleClass(element + '-active');
     })});
