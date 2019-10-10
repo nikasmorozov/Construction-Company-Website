@@ -11,8 +11,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   @include breakpoint($mobile) {
-    max-width: 100%;
+    padding: 0 20px 0 20px;
+    width: 100%;
   }
 }
 
@@ -23,7 +25,7 @@ section, footer {
   align-items: center;
   justify-content: center;
   background: #fff;
-  padding: 100px 0 100px 0;
+  padding: 50px 0 100px 0;
 }
 
 footer {
@@ -32,23 +34,15 @@ footer {
 
 #moto {
   height: 400px;
-  background: none;
   padding-top: 400px;
-}
+  background: none;
 
-.ParallaxVideo{ 
-  height: 300px;
-  padding-bottom: 50px;
-  padding-top: 50px; 
+  @include breakpoint($mobile) {
+    background-image: url(../../../public/assets/img/parallaxBack.png);
+    background-size: cover;
+    background-position: center;
   }
-  .ParallaxVideo video{ 
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: -999;
-  }
-  .ParallaxVideo h1 {
+  h1 {
     color: #fff;
     font-size: 60px;
     font-weight: 500;
@@ -57,7 +51,29 @@ footer {
     transform: translateY(-250px);
     letter-spacing: 3px;
     max-width: 700px;
+    @include breakpoint($mobile) {
+      font-size: 1.3rem;
+      width: 70%;
+      overflow: hidden;
+    }
   }
+
+  .ParallaxVideo{ 
+    height: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+    @include breakpoint($mobile) {
+      display: none;
+    }
+  }
+    .ParallaxVideo video{ 
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -999;
+    }
+}
 
 h1:after {
   content: "";
@@ -110,8 +126,6 @@ p {
   @include breakpoint($mobile) {
     flex-direction: column;
     justify-content: center;
-    max-width: 100vw;
-    padding: 0 20px 0 20px;
     box-sizing: border-box;
   }
  
@@ -164,12 +178,18 @@ h4 {
     padding: 100px 0px 100px 0;
     display: flex;
     flex-direction: row-reverse;
+    @include breakpoint($mobile) {
+      width: 100%;
+    }
   }
 
   .wrapper {
     flex-direction: column;
     width: 450px;
+    @include breakpoint($mobile) {
+      width: 100%;
   }
+}
 
   h2 {
     text-align: left;
@@ -185,6 +205,9 @@ h4 {
     width: 85%;
     line-height: 1.7;
     font-size: 17px;
+    @include breakpoint($mobile) {
+      width: 100%;
+    }
   }
 }
 
@@ -192,6 +215,16 @@ h4 {
   background: $main-color;
   width: 100%;
   padding: 50px 0 50px 0;
+  
+  .wrapper {
+    @include breakpoint($mobile) {
+      justify-content: space-around;
+    }
+  }
+  .wrapper div {
+    width: 200px;
+    margin: 20px 0 20px 0;
+  }
 
   h5 {
     position: relative;
@@ -208,8 +241,12 @@ h4 {
     content: "";
     position: absolute;
     height: 100%;
-    border-right: 2px solid #fff;
-    transform: translate(80px,40px);
+    border-left: 2px solid #fff;
+    left: 110%;
+    transform: translate(0, 40px);
+    @include breakpoint($mobile) {
+      content: none;
+    }
   }
 
   .wrapper > div:last-of-type h5:after {
@@ -223,13 +260,18 @@ h4 {
 
 .projects {
   .wrapper {
-    flex-wrap: wrap;
+    @include breakpoint($mobile) {
+      flex-direction: column;
+    }
   }
   
   .projContainer {
     width: 50%;
     padding: 10px;
     box-sizing: border-box;
+    @include breakpoint($mobile) {
+      width: 100%;
+    }
     p {
       padding-right: 20px;
       margin: 0;
@@ -300,6 +342,10 @@ h4 {
   .wrapper {
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
+    @include breakpoint($mobile) {
+      justify-content: center;
+    }
   }
 
   h2 {
@@ -327,7 +373,7 @@ h4 {
   img {
     height: 350px;
     background: url(../../../public/assets/img/map.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     border: none;
   }
@@ -336,6 +382,9 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include breakpoint($mobile) {
+      flex-direction: column;
+    }
 
     div {
       width: 100%;
@@ -357,11 +406,7 @@ h4 {
       padding-right: 0;
     }
 
-    div:last-of-type h4 {
-      // margin-top: 70px;
-    }
-
-    div:last-of-type h4:last-of-type:after {
+    div:last-of-type h4:last-of-type:before {
       content: "";
       position: absolute;
       top: -50px;
@@ -455,6 +500,10 @@ footer {
   background-position: 50vw;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @include breakpoint($mobile) {
+    display: none;
+  }
 }
 
 .projectPageHeading {
@@ -495,6 +544,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
   }
 
   .projImage {
