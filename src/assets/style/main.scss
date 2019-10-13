@@ -62,7 +62,7 @@ footer {
   .ParallaxVideo{ 
     height: 300px;
     padding-bottom: 50px;
-    padding-top: 50px; 
+    padding-top: 50px;
     @include breakpoint($mobile) {
       display: none;
     }
@@ -76,20 +76,15 @@ footer {
     }
 }
 
-h1:after {
+.buttonNext:after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -20px;
+  top: 350px;
   height: 40px;
   width: 40px;
   border-bottom: 7px solid #fff;
   border-right: 7px solid #fff;
   transform: rotate(45deg) translate(175px, 175px);
-  @include breakpoint($mobile) {
-    display: none;
-  }
 }
 
 h2 {
@@ -372,14 +367,6 @@ h4 {
 #contact {
   .wrapper {
     flex-direction: column;
-  }
-
-  img {
-    height: 350px;
-    background: url(../../../public/assets/img/map.png);
-    background-size: cover;
-    background-position: center;
-    border: none;
   }
 
   .contactInfo {
