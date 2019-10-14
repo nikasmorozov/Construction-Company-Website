@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'breakpoint_mixin';
+
 nav {
   display: flex;
   height: $nav-height;
@@ -26,6 +29,9 @@ nav {
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 0.9;
+    @include breakpoint($mobileS){
+      font-size: 18px;
+    }
     strong {
       font-weight: 800;
     }
@@ -34,6 +40,10 @@ nav {
     height: 50px;
     width: 50px;
     margin-right: 10px;
+    @include breakpoint($mobileS){
+      height: 40px;
+      width: 40px;
+    }
   }
 }
 
@@ -49,6 +59,9 @@ nav {
   justify-content: space-between;
   list-style-type: none;
   margin-right: 20px;
+  @include breakpoint($mobileS) {
+    margin-right: 0;
+  }
     li {
       padding: 0 10px 0 10px;
       margin-right: 50px;
@@ -98,6 +111,9 @@ nav {
       height: 100vh;
       justify-content: flex-start;
       margin-top: 100px;
+      @include breakpoint ($mobileS) {
+        margin-top: 0;
+      }
       li {
         margin-top: 30px;
         a {
