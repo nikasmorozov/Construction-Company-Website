@@ -55,7 +55,7 @@ footer {
     letter-spacing: 3px;
     max-width: 700px;
     @include breakpoint($mobile) {
-      font-size: 2.5rem;
+      font-size: 20px;
       width: 80%;
       margin-top: 500px;
     }
@@ -78,6 +78,10 @@ footer {
     top: 0;
     z-index: -999;
     height: 100vh;
+    @include breakpoint(min-width 1500px) {
+      height: auto;
+      width: 100vw;
+    }
     }
 }
 
@@ -457,6 +461,7 @@ form {
     text-align: left;
     font-weight: 400;
     font-family: 'Roboto';
+    position: relative;
 
     &:focus {
       outline: none;
