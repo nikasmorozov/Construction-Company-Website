@@ -96,7 +96,7 @@ footer {
   border-right: 7px solid #fff;
   transform: rotate(45deg) translate(175px, 175px);
   @include breakpoint($mobileS){
-    top: 120px;
+    top: 200px;
   }
 }
 
